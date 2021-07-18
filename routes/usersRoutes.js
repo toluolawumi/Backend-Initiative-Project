@@ -10,14 +10,14 @@ router.post('/users', UserController.createUser);
 //get request to get all users
 router.get('/users', UserController.allUsers)
 
-// //get request to fetch single user
-// router.get('/users', UserController.createUser)
+//get request to fetch single user
+router.get('/users/:id', UserController.fetchSingleUser)
 
-// //put request to update a single user
-// router.put('/users', UserController.createUser)
+//put request to update a single user
+router.put('/users/:id', UserController.updateSingleUser)
 
-// //delete request to delete a user
-// router.delete('/users', UserController.createUser)
+//delete request to delete a user
+router.delete('/users/:id', UserController.deleteSingleUser)
 
 
 module.exports = router;

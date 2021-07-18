@@ -12,10 +12,10 @@ const usersRoutes = require('./routes/usersRoutes');
 app.use(usersRoutes)
 
 const moviesRoutes = require('./routes/moviesRoutes');
-//app.use(moviesRoutes)
+app.use(moviesRoutes)
 
 const rentalsRoutes = require('./routes/rentalsRoutes');
-//app.use(rentalsRoutes)
+app.use(rentalsRoutes)
 
 // Create a basic express route
 app.get('/', (req, res) => res.json({ message: "Welcome to a basic directory"}));
